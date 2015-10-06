@@ -1,0 +1,29 @@
+name = fepi
+description = Frontend Theme for Drupal
+core = 7.x
+engine = phptemplate
+
+regions[header] = Header
+regions[banner] = Banner
+regions[content] = Content
+regions[menu] = Menu
+regions[sidebar] = Sidebar
+regions[footer] = Footer
+regions[questions] = Intrebari banner
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/general.css
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/skin.css
+
+scripts[] = scripts/jquery.slides.min.js
+scripts[] = scripts/jquery.jcarousel.js
+scripts[] = scripts/site_scripts.js
+scripts[] = scripts/custom.js
+
+
+
+features[] = name
+features[] = main_menu
+features[] = logo
+features[] = slogan
