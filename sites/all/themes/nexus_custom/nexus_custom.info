@@ -5,9 +5,13 @@ engine = phptemplate
 base theme = nexus
 
 stylesheets[all][] = css/magnific-popup.css
+stylesheets[all][] = css/font-awesome.min.css
+stylesheets[all][] = css/slick-theme.css
+stylesheets[all][] = css/slick.css
 stylesheets[all][] = css/custom.css
 
 scripts[] = js/jquery.magnific-popup.min.js
+scripts[] = js/slick.js
 scripts[] = js/scripts.js
 
 regions[sidebar_first]  = First Sidebar

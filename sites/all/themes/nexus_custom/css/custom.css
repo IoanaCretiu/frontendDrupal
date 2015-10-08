@@ -156,3 +156,27 @@ h1 {
 .item-list ul.pager li>a:hover {
   color: #f4473a;
 }
+
+/* Gallery */
+.popup-gallery .field-items {
+  display: inline-block;
+  width: 100%;
+  background-color: #999;
+  padding: 13px 10px 5px;
+}
+
+.popup-gallery .field-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.popup-gallery .field-item a {
+  display: inline-block;
+}
+
+.popup-gallery .field-item a img {
+  border: none !important;
+  padding: 0 !important;
+  max-height: 95px;
+  width: 142px;
+}

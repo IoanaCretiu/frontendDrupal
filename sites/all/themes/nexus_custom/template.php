@@ -51,8 +51,13 @@ function nexus_custom_menu_local_tasks(&$variables) {
 function nexus_custom_preprocess_node(&$variables) {
   $node = $variables['node'];
   if ($variables['view_mode'] == 'full' && node_is_page($variables['node'])) {
-    $variables['classes_array'][] = 'node-full';
+    $variables['content_attributes_array']['class'][] = 'content node-full';
   }
+
+  if ($variables['type'] == 'slide') {
+    $variables['content_attributes_array']['class'][] = 'news-details';
+  }
+
   $variables['date'] = t('!datetime', array('!datetime' =>  date('j F Y', $variables['created'])));
   $variables['content']['links']['node']['#links']['node-readmore']['attributes']['class'] = array('btn', 'btn-medium');
 }
@@ -70,12 +75,11 @@ function nexus_custom_page_alter($page) {
   drupal_add_html_head($viewport, 'viewport');
 }
 
-function nexus_preprocess_field(&$variables) {
+function nexus_custom_preprocess_field(&$variables) {
   if ($variables['element']['#field_name'] == 'field_images' && $variables['element']['#object']->type == "album") {
     $variables['classes_array'][] = 'popup-gallery';
   }
 }
-
 
 /**
  * Add javascript files for front-page jquery slideshow.

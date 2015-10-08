@@ -1,3 +1,15 @@
+/* News slider */
+function newsSlider() {
+  jQuery('.f_newsSlideshow').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true
+  });
+}
+
+/* Albums */
 function albumImages() {
   jQuery('.popup-gallery').magnificPopup({
     delegate: 'a',
@@ -19,6 +31,7 @@ function albumImages() {
 }
 
 jQuery(window).load(function() {
+  newsSlider();
   albumImages();
 });
 
