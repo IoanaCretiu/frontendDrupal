@@ -3,7 +3,13 @@ description = Nexus Custom Theme is a premium Drupal 7 theme. Developed by <a hr
 core = 7.x
 engine = phptemplate
 base theme = nexus
+
+stylesheets[all][] = css/magnific-popup.css
 stylesheets[all][] = css/custom.css
+
+scripts[] = js/jquery.magnific-popup.min.js
+scripts[] = js/scripts.js
+
 regions[sidebar_first]  = First Sidebar
 regions[header]         = Header
 regions[preface_first]  = Preface First

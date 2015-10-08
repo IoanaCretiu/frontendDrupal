@@ -70,6 +70,12 @@ function nexus_custom_page_alter($page) {
   drupal_add_html_head($viewport, 'viewport');
 }
 
+function nexus_preprocess_field(&$variables) {
+  if ($variables['element']['#field_name'] == 'field_images' && $variables['element']['#object']->type == "album") {
+    $variables['classes_array'][] = 'popup-gallery';
+  }
+}
+
 
 /**
  * Add javascript files for front-page jquery slideshow.
