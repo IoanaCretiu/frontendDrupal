@@ -59,7 +59,7 @@ function nexus_custom_preprocess_node(&$variables) {
   }
 
   $variables['date'] = t('!datetime', array('!datetime' =>  date('j F Y', $variables['created'])));
-  $variables['content']['links']['node']['#links']['node-readmore']['attributes']['class'] = array('btn', 'btn-medium');
+  $variables['content']['links']['node']['#links']['node-readmore']['attributes']['class'] = array('btn', 'primary-bg');
 }
 
 function nexus_custom_page_alter($page) {

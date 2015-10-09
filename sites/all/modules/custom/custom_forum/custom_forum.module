@@ -1,0 +1,24 @@
+<?php
+
+function custom_forum_node_view($node, $view_mode) {
+  $node->content['links']['comment']['#links']['comment-add']['attributes']['class'] = array('btn', 'secondary-bg');
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for comment_form.
+ */
+function custom_forum_form_comment_form_alter(&$form, &$form_state) {
+  $form['actions']['submit']['#attributes']['class'] = array('btn', 'primary-bg');
+  $form['actions']['preview']['#attributes']['class'] = array('btn', 'secondary-bg');
+  $form['#after_build'][] = 'custom_forum_comment_form_after_build';
+}
+
+/**
+ * After build handler for the comment_form.
+ */
+function custom_forum_comment_form_after_build($form) {
+  // Disables the text format guidelines and select list.
+  $form['comment_body'][LANGUAGE_NONE]['0']['format']['#access'] = FALSE;
+
+  return $form;
+}

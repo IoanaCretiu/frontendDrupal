@@ -3,12 +3,32 @@ h1 {
 }
 
 /* buttons */
-.links li a.btn {
+.links li a.btn,
+.btn {
   border-radius: 5px;
   color: #ffffff;
-  background-color: #fe9a01;
   text-shadow: none;
   font-weight: bold;
+}
+
+.primary-bg,
+.links li a.primary-bg {
+  background-color: #fe9a01;
+}
+
+.primary-bg:hover,
+.links li a.primary-bg:hover {
+  background-color: #ee9000;
+}
+
+.secondary-bg,
+.links li a.secondary-bg {
+  background-color: #784a96;
+}
+
+.links li a.secondary-bg:hover,
+.secondary-bg:hover {
+  background-color: #6a378b;
 }
 
 .highlighted,
@@ -161,8 +181,7 @@ h1 {
 .popup-gallery .field-items {
   display: inline-block;
   width: 100%;
-  background-color: #999;
-  padding: 13px 10px 5px;
+  padding: 13px 0 5px;
 }
 
 .popup-gallery .field-item {
@@ -179,4 +198,39 @@ h1 {
   padding: 0 !important;
   max-height: 95px;
   width: 142px;
+}
+
+.albums .single-album {
+  float: left;
+  margin: 5px 0 5px 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.albums .single-album:first-child {
+  margin-left: 0;
+}
+
+/* News */
+.news-details .field-name-field-image {
+  float: left;
+}
+
+/* Comments Form */
+#comment-form .form-type-item label {
+  margin-right: 5px;
+}
+
+#comments {
+  margin-top: 10px;
+  display: inline-block;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 10px 15px;
+  border-top: 2px solid #F96B61;
+}
+
+#comments .title.comment-form {
+  font-weight: bold;
+  margin-bottom: 15px;
 }

@@ -1,0 +1,4 @@
+name = Custom Forum
+description = Custom Forum Button.
+package = User interface
+core = 7.x
