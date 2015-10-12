@@ -6,9 +6,17 @@ h1 {
 .links li a.btn,
 .btn {
   border-radius: 5px;
-  color: #ffffff;
+  color: #666666;
   text-shadow: none;
   font-weight: bold;
+  background: transparent;
+  border: 1px solid #666666;
+}
+
+.links li a.btn:hover,
+.btn:hover {
+  color: #C13100;
+  border: 1px solid #C13100;
 }
 
 .primary-bg,
@@ -78,7 +86,7 @@ h1 {
   opacity: 1;
   display: inline-block;
   font: normal normal normal 25px/1 FontAwesome;
-  color: #fe9a01;
+  color: #C13100;
 }
 
 .f_newsSlideshow .slick-prev:before {
@@ -113,7 +121,7 @@ h1 {
 }
 
 .f_newsSlideshow .slick-dots li.slick-active button {
-  background: #fe9a01;
+  background: #C13100;
 }
 
 .f_newsSlideshow .slick-dots li button {
@@ -138,9 +146,10 @@ h1 {
   padding: 0;
 }
 
-.page-title {
-  text-align: center;
-  text-shadow: 2px 1px 1px #333333;
+h1.page-title {
+  color: #000000;
+  font-size: 40px;
+  text-align: left;
 }
 
 /* Add content */
@@ -174,7 +183,7 @@ h1 {
 }
 
 .item-list ul.pager li>a:hover {
-  color: #f4473a;
+  color: #C13100;
 }
 
 /* Gallery */
@@ -227,7 +236,7 @@ h1 {
   width: 100%;
   background-color: #f2f2f2;
   padding: 10px 15px;
-  border-top: 2px solid #F96B61;
+  border-top: 2px solid #ccc;
 }
 
 #comments .title.comment-form {

@@ -55,7 +55,7 @@ body {
 
 /* Links */
 a {
-  color: #f4473a;
+  color: #C13100;
 
 }
 a:hover,
@@ -339,7 +339,7 @@ h1#site-title a:link, h1#site-title a:visited{
 }
 
 #main-menu li a:hover, #main-menu li a:active, #main-menu a.active, #main-menu > ul > li > a.active-trail {
-  color: #ed564b;
+  color: #C13100;
 }
   
 #main-menu li a.sf-with-ul {
@@ -481,8 +481,8 @@ a.frmore{
 
 #preface-area {
   background: none repeat scroll 0 0 #ED564B;
-  border-bottom: 5px solid #F96B61;
-  border-top: 5px solid #F96B61;
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
   padding: 40px 0 20px;
 }
 
@@ -540,9 +540,9 @@ a.frmore{
 /* =Content
 ----------------------------------------------- */
 
-.node h2.title a, h1.page-title {
+.node h2.title a {
   color: #000000;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 20px;
   margin-top: 10px;
