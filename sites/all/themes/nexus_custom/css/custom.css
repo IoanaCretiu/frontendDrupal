@@ -13,10 +13,13 @@ h1 {
   border: 1px solid #666666;
 }
 
+.links li a.btn:focus,
+.btn:focus,
 .links li a.btn:hover,
 .btn:hover {
   color: #C13100;
   border: 1px solid #C13100;
+  outline: none;
 }
 
 .primary-bg,
@@ -150,6 +153,7 @@ h1.page-title {
   color: #000000;
   font-size: 40px;
   text-align: left;
+  margin-bottom: 20px;
 }
 
 /* Add content */
