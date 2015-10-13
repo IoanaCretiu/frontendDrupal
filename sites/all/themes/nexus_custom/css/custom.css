@@ -220,6 +220,10 @@ h1.page-title {
   margin-left: 0;
 }
 
+ul.links.inline .comment-add {
+  display: none;
+}
+
 /* News */
 .news-details .field-name-field-image {
   float: left;
