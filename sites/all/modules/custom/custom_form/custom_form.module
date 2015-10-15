@@ -1,0 +1,35 @@
+<?php
+  /* Custome form */
+  function custom_form_form($form, &$form_state) {
+    $form['blabla'] = array (
+      '#type' => 'checkboxes',
+      '#options' => array(
+          'sat'=>'Saturday',
+          'mon'=>'Monday',
+          'fri'=>'Friday',
+        ),
+      '#title' => 'Days'
+    );
+
+    return $form;
+  }
+
+
+  function custom_form_menu() {
+    $items['form-Ioana-url'] = array(
+      'title' => 'Forum Ioana',
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('custom_form_form'),
+      'access callback' => 'custom_check_if_admin'
+    );
+
+    return $items;
+  }
+
+  function custom_check_if_admin() {
+    global $user;
+    if (in_array('administrator', $user->roles)) {
+      return TRUE;
+    }
+    return FALSE;
+  }

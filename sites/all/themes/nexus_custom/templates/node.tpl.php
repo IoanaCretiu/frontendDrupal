@@ -113,6 +113,7 @@
   <?php endif; ?>
 
   <?php print render($content['comments']); ?>
+  <?php /*print render($form_Ioana); */ ?> <!-- render form Ioana -->
 <?php if (!$page): ?>
   </article> <!-- /.node -->
 <?php endif; ?>

@@ -765,7 +765,7 @@ function hook_field_widget_info() {
   return array(
     'text_textfield' => array(
       'label' => t('Text field'),
-      'field types' => array('text'),
+      'field types' => array('text', 'text_long'),
       'settings' => array('size' => 60),
       'behaviors' => array(
         'multiple values' => FIELD_BEHAVIOR_DEFAULT,
